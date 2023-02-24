@@ -1,7 +1,7 @@
 import grid from 'gridfs-stream';
 import mongoose from 'mongoose';
-//const PORT = process.env.PORT || 8000;
-const url = 'https://localhost:8000';
+const PORT = process.env.PORT || 8000;
+const url = `https://localhost:${PORT}`;
 
 
 let gfs, gridfsBucket;
