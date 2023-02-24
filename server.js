@@ -14,11 +14,6 @@ app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', Router);
 
-if (process.env.NODE_ENV === 'production'){     
-    app.use(express.static('client/bulid'));
-}
-
-
 const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
