@@ -1,6 +1,6 @@
 import grid from 'gridfs-stream';
 import mongoose from 'mongoose';
-const url = '';
+const url = ' ';
 
 
 let gfs, gridfsBucket;
